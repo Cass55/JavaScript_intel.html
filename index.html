@@ -77,6 +77,11 @@ subjects.forEach(function(subject) {
 // Display array values seperated by commas using one statement
 document.write("<p>Array values seperated by commas:</p>");
 document.write(subjects.join(", "));
+function changeBackground(color) {
+  document.body.style.background = color;
+}
+window.addEventListener("load",function() { changeBackground('blue') });
+	<script src = "index.js"></script>
 </script>
 </body>
 </html>
