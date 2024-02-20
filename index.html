@@ -36,7 +36,47 @@
 	document.write("Your favorite number is: " + myFavNum + "<br>");
 	document.write("If that was the radius of a circle, the circle's area would be: " + myArea);
 	
+// Task 1 - Display odd or even numbers from 0 to 10
+document.write("<h2>Task 1:</h2>");
+for (let i = 0; i <= 10; i++) {
+	if (i % 2== 0) {
+		document.write("Count " + i + " is even<br>");
+	} else {
+		document.write("Count " + i + " is odd<br>");
+	}
+}
+
+// Task 2 - Using Do While Loop to display numbers until input is reached
+document.write("<h2>Task 2:</h2>");
+let myNum;
+do {
+	myNum = parseInt(prompt("Enter a number between 5 and 20: "));
+} while (isNaN(myNum) || myNum < 5 || myNum > 20);
+let counter = 1;
+do {
+	document.write(counter + "<br>");
+	counter++;
+} while (counter <= myNum);
+
+// Task 3 - Display array values
+document.write("<h2>Task 3:</h2>");
+let subjects = [
+	"Accounting", 
+	"Algebra", 
+	"Programming", 
+	"Art", 
+	"Data Analytics"
+];
+
+// Display array values using forEach
+document.write("<p>Array values using forEach:</p>");
+subjects.forEach(function(subject) {
+	document.write(subject + "<br>");
+});
+
+// Display array values seperated by commas using one statement
+document.write("<p>Array values seperated by commas:</p>");
+document.write(subjects.join(", "));
 </script>
 </body>
 </html>
-
